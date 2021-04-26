@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    button {
+        background-color: lavenderblush;
+        color: tomato;
+    }
+    
+    h1 {
+        color: brown;
+    }
+</style>
+
+<body>
+    <h2>Check your luck....</h2>
+    <input id="bro" type="text" placeholder="Inter your name">
+    <button onclick="pawan()">Click Here</button>
+    <p id="demo"></p>
+    <script>
+        function pawan() {
+            var x = document.getElementById("bro").value;
+            var text;
+            switch (x) {
+                case "pawan":
+                    text = "<h1>Very good name..... Es name k log bahut achhe hote or yha name naseeb valo ko hi milta h. Ase log dil k bahut achhe hote or y kisi k dil ni todte. Y apni maa s bahut pyar krte h</h1>";
+                    break;
+                case "rakesh":
+                    text = "<h1>Good name.... Es name log achhe hote. inka dil bahut saaf hota dil k sachhe hote h. Or yha jo bhi kam krte h vha sachhe dil s krte h.</h1>  ";
+                    break;
+                case "kamlesh":
+                    text = "<h1>Good... Kamlesh name k log bahut achhe hote h. y jb kisi s pyar krte h to sachhe dil s krte h. Or bs usi s krte h.</h1>";
+                    break;
+                case "giriraj":
+                    text = "<h1>Very Good.... Es name log achhe hote. inka dil bahut saaf hota dil k sachhe hote h. Or yha jo bhi kam krte h vha sachhe dil s krte h</h1>";
+                    break;
+                case "ashok":
+                    text = "<h1>Good name.... Es name k log bahut achhe hote h. Or dosti to inki sabse achhi hoti h. Ak br kisi ko dost bna le to uska sat nhi chodte h</h1> ";
+                    break;
+                default:
+                    text = " <h1>Your name is Good... Yha name bahut kam logo k hota h. kyuki is name k log bahut achhe hote friendship m sabse age. or looks to shandrr hota h.</h1>";
+
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
